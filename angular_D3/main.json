@@ -1,0 +1,20 @@
+[
+{"name" : "Bar Graph", "link" : "barGraph.html"},
+{"name" : "Group Bar Graph", "link" : "groupBarGraph.html"},
+{"name" : "Scatter Plot", "link" : "scatterPlot.html"},
+{"name" : "Scatterplot Matrix", "link" : "scatterplotMatrix.html"},
+{"name" : "Sunburst Partition", "link" : "sunburst.html"},
+{"name" : "Box Plot", "link" : "boxPlot.html"},
+{"name" : "Pie Chart", "link" : "pieChart.html"},
+{"name" : "Circle Diagram", "link" : "circleDiagram.html"},
+{"name" : "Chord Diagram", "link" : "chordDiagram.html"},
+{"name" : "Red-Black Tree (tree is incorrect)", "link" : "redBlackTree.html"},
+{"name" : "Donut Chart", "link" : ""},
+{"name" : "Donut Multiples", "link" : ""},
+{"name" : "Area Chart", "link" : ""},
+{"name" : "Line Chart", "link" : ""},
+{"name" : "Speedometer", "link" : "speedometer.html"},
+{"name" : "US Map", "link" : "usMap.html"},
+{"name" : "Circular Bracket", "link" : "circularBracket.html"},
+{"name" : "Dashboard", "link" : "dashboard.html"} 
+]

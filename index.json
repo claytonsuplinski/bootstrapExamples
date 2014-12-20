@@ -1,0 +1,6 @@
+[
+{"name" : "Bar Graph", "link" : "./angular_D3/barGraph.html", "image" : "./angular_D3/barGraph.png", "categories" : ["Angular", "D3"], "description" : "A simple bar graph display running on json data."},
+{"name" : "Group Bar Graph", "link" : "./angular_D3/groupBarGraph.html", "image" : "./angular_D3/groupBarGraph.png", "categories" : ["Angular", "D3"], "description" : "Grouped bar graphs running on json data."},
+{"name" : "Dashboard", "link" : "./angular_D3/dashboard.html", "image" : "./angular_D3/dashboard.png", "categories" : ["Angular", "D3"], "description" : "An interactive bar graph, pie graph, and numerical output display for analysis."},
+{"name" : "Homepage 1", "link" : "./homepage1/index.html", "image" : "./homepage1/image.png", "categories" : ["Bootstrap"], "description" : "A simple homepage template, also suited for mobile devices."}
+]

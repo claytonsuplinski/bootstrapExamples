@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Web Templates</title>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+	a{
+		color:#882222;
+	}
+	a:hover{
+		color:crimson;
+	}
+	
+	.pagination .active a{
+		background:#882222;
+		border-width:0px;
+	}
+	
+	.pagination .active a:hover{
+		background:crimson;
+	}
+	
+	.pagination li a{
+		color:#882222;
+		border-width:0px;
+	}
+	
+	.pagination li a:hover{
+		background:#ffcccc;
+		color:crimson;
+	}
+	</style>
+</head>
+
+<body style="background:#ffdddd" onload="pageIndexSelectorHash();">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background:#551111;border-width:0px;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Web Templates</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Bootstrap</a>
+                    </li>
+					<li>
+                        <a href="#">Angular</a>
+                    </li>
+                    <li>
+                        <a href="#">D3</a>
+                    </li>
+					<li>
+                        <a href="#">Node.js</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+		<div id="mainContentContainer">
+			<!-- Page Header -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="page-header">Web Templates
+						<small>Home</small>
+					</h1>
+				</div>
+			</div>
+			<!-- /.row -->
+
+			<!-- Projects Row -->
+			<div class="row">
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Homepage</a>
+					</h3>
+					<p>Bootstrap - A simple and easy to follow homepage design.</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+			</div>
+			<!-- /.row -->
+
+			<!-- Projects Row -->
+			<div class="row">
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+			</div>
+
+			<!-- Projects Row -->
+			<div class="row">
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+				<div class="col-md-4 portfolio-item">
+					<a href="#">
+						<img class="img-responsive" src="http://placehold.it/700x400" alt="">
+					</a>
+					<h3>
+						<a href="#">Project Name</a>
+					</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+				</div>
+			</div>
+			<!-- /.row -->
+		</div>
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination" id="pageIndexSelector">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Business Year</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="pageIndexSelector.js"></script>
+	<script>
+	var jsonContent;
+	$.getJSON("index.json", function(json) {
+		jsonContent = json;
+		
+		numPages = Math.ceil(jsonContent.length/9);
+		
+		var tmpInnerHtml = "";
+		
+		tmpInnerHtml += "<div class='row'>";
+		tmpInnerHtml += "<div class='col-lg-12'>";
+		tmpInnerHtml += "<h1 class='page-header'>Web Templates ";
+		tmpInnerHtml += "<small>/ Home</small>";
+		tmpInnerHtml += "</h1>";
+		tmpInnerHtml += "</div>";
+		tmpInnerHtml += "</div>";
+		
+		pageIndex = (pageIndex > numPages || pageIndex < 1 ? 1 : pageIndex);
+		
+		for(var i=(pageIndex-1)*9; i<Math.min(jsonContent.length, (pageIndex-1)*9 + 9); i++){
+			if(i%3 == 0){
+				tmpInnerHtml += "<div class='row'>";
+			}
+			
+			tmpInnerHtml += "<div class='col-md-4 portfolio-item'>";
+			tmpInnerHtml += "<a href='"+jsonContent[i].link+"'>";
+			tmpInnerHtml += "<img class='img-responsive' src='"+jsonContent[i].image+"' alt=''>";
+			tmpInnerHtml += "</a>";
+			tmpInnerHtml += "<h3>";
+			tmpInnerHtml += "<a href="+jsonContent[i].link+">"+jsonContent[i].name+"</a>";
+			tmpInnerHtml += "</h3>";
+			var tmpCategories = "";
+			for(var j=0; j<jsonContent[i].categories.length; j++){
+				tmpCategories += jsonContent[i].categories[j] + (j != jsonContent[i].categories.length-1 ? " / " : " - ");
+			}
+			tmpInnerHtml += "<p>"+tmpCategories+jsonContent[i].description+"</p>";
+			tmpInnerHtml += "</div>";
+			
+			if(i%3 == 2 || i == jsonContent.length-1){
+				tmpInnerHtml += "</div>";
+			}
+		}
+		
+        $("#mainContentContainer").html(tmpInnerHtml);    
+	});
+	</script>
+</body>
+
+</html>

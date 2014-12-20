@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+<style>
+
+#links{
+margin-left:10%;margin-right:10%;
+width:80%;
+}
+
+#links tr:nth-child(odd)	{
+background-color: #dddddd;
+-webkit-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.75);
+}
+#links tr:nth-child(even) {
+background-color: #ffffff;
+-webkit-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+#links td:hover{
+cursor:pointer;
+background:lightblue;
+}
+
+.tableLink{
+color:black;
+text-decoration:none;
+display:block;
+padding:1vw;
+}
+</style>
+</head>
+
+<body>
+<div id="title" onclick="location.href='index.html';">Angular & D3 Introduction</div>
+<br><br>
+
+<div id="mainContainer">
+<div ng-app="myApp" ng-controller="loadTable">
+	 <table id="links">
+	  <tr ng-repeat="x in names">
+		<td><a class="tableLink" ng-href="{{x.link}}">{{ x.name }}</a></td>
+	  </tr>
+	</table> 
+</div>
+</div>
+<br><br>
+
+<script>
+
+var app = angular.module("myApp", []);
+
+var names = new Array();
+app.controller("loadTable", function($scope, $http) {
+	$http.get("main.json").success(function(response) {$scope.names = response;names = response;});
+});
+
+</script>
+
+</body>
+</html> 
