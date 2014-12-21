@@ -75,7 +75,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html" style="color:#ddbb77">Web Templates</a>
+                <a class="navbar-brand" href="index.html">Web Templates</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -90,7 +90,7 @@
                         <a href="d3.html">D3</a>
                     </li>
 					<li>
-                        <a href="nodeJS.html">Node.js</a>
+                        <a href="nodeJS.html" style="color:#ddbb77">Node.js</a>
                     </li>
                 </ul>
             </div>
@@ -267,6 +267,14 @@
 	$.getJSON("index.json", function(json) {
 		jsonContent = json;
 		
+		var tmpJsonContent = new Array();
+		for(var i=0; i<jsonContent.length; i++){
+			if(jsonContent[i].categories.indexOf("Node.js") != -1){
+				tmpJsonContent.push(jsonContent[i]);
+			}
+		}
+		jsonContent = tmpJsonContent;
+		
 		numPages = Math.ceil(jsonContent.length/9);
 		
 		var tmpInnerHtml = "";
@@ -274,7 +282,7 @@
 		tmpInnerHtml += "<div class='row'>";
 		tmpInnerHtml += "<div class='col-lg-12'>";
 		tmpInnerHtml += "<h1 class='page-header'>Web Templates ";
-		tmpInnerHtml += "<small>/ Home</small>";
+		tmpInnerHtml += "<small>/ Node.js</small>";
 		tmpInnerHtml += "</h1>";
 		tmpInnerHtml += "</div>";
 		tmpInnerHtml += "</div>";

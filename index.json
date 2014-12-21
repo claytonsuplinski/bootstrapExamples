@@ -1,6 +1,17 @@
 [
 {"name" : "Bar Graph", "link" : "./angular_D3/barGraph.html", "image" : "./angular_D3/barGraph.png", "categories" : ["Angular", "D3"], "description" : "A simple bar graph display running on json data."},
 {"name" : "Group Bar Graph", "link" : "./angular_D3/groupBarGraph.html", "image" : "./angular_D3/groupBarGraph.png", "categories" : ["Angular", "D3"], "description" : "Grouped bar graphs running on json data."},
-{"name" : "Dashboard", "link" : "./angular_D3/dashboard.html", "image" : "./angular_D3/dashboard.png", "categories" : ["Angular", "D3"], "description" : "An interactive bar graph, pie graph, and numerical output display for analysis."},
+{"name" : "Scatter Plot", "link" : "./angular_D3/scatterPlot.html", "image" : "./angular_D3/scatterPlot.png", "categories" : ["Angular", "D3"], "description" : "Simple scatter plot running on json data."},
+{"name" : "Scatterplot Matrix", "link" : "./angular_D3/scatterplotMatrix.html", "image" : "./angular_D3/scatterplotMatrix.png", "categories" : ["D3"], "description" : "A scatterplot matrix running on json data, for illustrating correlations between variables."},
+{"name" : "Sunburst Partition", "link" : "./angular_D3/sunburst.html", "image" : "./angular_D3/sunburstPartition.png", "categories" : ["D3"], "description" : "Sunburst partition for displaying hierarchical data."},
+{"name" : "Box Plot", "link" : "./angular_D3/boxPlot.html", "image" : "./angular_D3/boxPlot.png", "categories" : ["Angular", "D3"], "description" : "Box plot for illustrating quartiles and outliers."},
+{"name" : "Pie Chart", "link" : "./angular_D3/pieChart.html", "image" : "./angular_D3/pieChart.png", "categories" : ["Angular", "D3"], "description" : "A simple pie chart running on json data."},
+{"name" : "Circle Diagram", "link" : "./angular_D3/circleDiagram.html", "image" : "./angular_D3/circleDiagram.png", "categories" : ["D3"], "description" : "A circle diagram for illustrating categorical data."},
+{"name" : "Chord Diagram", "link" : "./angular_D3/chordDiagram.html", "image" : "./angular_D3/chordDiagram.png", "categories" : ["Angular", "D3"], "description" : "A chord diagram for illustrating relations between categories."},
+{"name" : "Red-Black Tree", "link" : "./angular_D3/redBlackTree.html", "image" : "./angular_D3/redBlackTree.png", "categories" : ["Angular", "D3"], "description" : "An interactive red-black tree. Structure of tree is incorrect, but visualization is pretty cool."},
+{"name" : "Speedometer", "link" : "./angular_D3/speedometer.html", "image" : "./angular_D3/speedometer.png", "categories" : ["D3"], "description" : "A simple speedometer visualization."},
+{"name" : "US Map", "link" : "./angular_D3/usMap.html", "image" : "./angular_D3/usMap.png", "categories" : ["D3"], "description" : "An interactive map of the United States."},
+{"name" : "Dashboard", "link" : "./angular_D3/dashboard.html", "image" : "./angular_D3/dashboard.png", "categories" : ["D3"], "description" : "An interactive bar graph, pie graph, and numerical output display for analysis."},
+{"name" : "Table of Links", "link" : "./angular_D3/index.html", "image" : "./angular_D3/index.png", "categories" : ["Angular"], "description" : "A list of links formatted and generated from json data."},
 {"name" : "Homepage 1", "link" : "./homepage1/index.html", "image" : "./homepage1/image.png", "categories" : ["Bootstrap"], "description" : "A simple homepage template, also suited for mobile devices."}
 ]
