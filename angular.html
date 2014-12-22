@@ -93,6 +93,16 @@
                         <a href="nodeJS.html">Node.js</a>
                     </li>
                 </ul>
+				<div class="col-sm-3 col-md-3 pull-right">
+					<div class="navbar-form" onsubmit="processSearch();">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Search" name="searchQuery" id="searchInput">
+							<div class="input-group-btn">
+								<button class="btn btn-default" onclick="processSearch($('#searchInput').val());"><i class="glyphicon glyphicon-search"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -263,7 +273,16 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="pageIndexSelector.js"></script>
 	<script>
-	var jsonContent;
+	
+	$(document).ready(function(){
+		$('#searchInput').keypress(function(e){
+			if(e.keyCode==13){
+				processSearch($("#searchInput").val());
+			}		  
+		});
+	});
+	
+	var jsonContent, resetJsonContent;
 	$.getJSON("index.json", function(json) {
 		jsonContent = json;
 		
@@ -274,6 +293,7 @@
 			}
 		}
 		jsonContent = tmpJsonContent;
+		resetJsonContent = jsonContent;
 		
 		numPages = Math.ceil(jsonContent.length/9);
 		
@@ -315,6 +335,61 @@
 		
         $("#mainContentContainer").html(tmpInnerHtml);    
 	});
+	
+	function processSearch(searchInput){
+		jsonContent = resetJsonContent;
+		
+		var tmpSearch = searchInput.toLowerCase();
+		var tmpJsonContent = new Array();
+		for(var i=0; i<jsonContent.length; i++){
+			if(jsonContent[i].name.toLowerCase().indexOf(tmpSearch) != -1
+				|| jsonContent[i].description.toLowerCase().indexOf(tmpSearch) != -1){
+				tmpJsonContent.push(jsonContent[i]);
+			}
+		}
+		jsonContent = tmpJsonContent;
+		
+		numPages = 1;
+		pageIndexSelectorHash();
+		
+		var tmpInnerHtml = "";
+		
+		tmpInnerHtml += "<div class='row'>";
+		tmpInnerHtml += "<div class='col-lg-12'>";
+		tmpInnerHtml += "<h1 class='page-header'>Web Templates ";
+		tmpInnerHtml += "<small>/ Angular</small>";
+		tmpInnerHtml += "</h1>";
+		tmpInnerHtml += "</div>";
+		tmpInnerHtml += "</div>";
+		
+		pageIndex = (pageIndex > numPages || pageIndex < 1 ? 1 : pageIndex);
+		
+		for(var i=0; i<jsonContent.length; i++){
+			if(i%3 == 0){
+				tmpInnerHtml += "<div class='row'>";
+			}
+			
+			tmpInnerHtml += "<div class='col-md-4 portfolio-item'>";
+			tmpInnerHtml += "<a href='"+jsonContent[i].link+"'>";
+			tmpInnerHtml += "<img class='img-responsive' src='"+jsonContent[i].image+"' alt=''>";
+			tmpInnerHtml += "</a>";
+			tmpInnerHtml += "<h3>";
+			tmpInnerHtml += "<a href="+jsonContent[i].link+">"+jsonContent[i].name+"</a>";
+			tmpInnerHtml += "</h3>";
+			var tmpCategories = "";
+			for(var j=0; j<jsonContent[i].categories.length; j++){
+				tmpCategories += jsonContent[i].categories[j] + (j != jsonContent[i].categories.length-1 ? " / " : " - ");
+			}
+			tmpInnerHtml += "<p>"+tmpCategories+jsonContent[i].description+"</p>";
+			tmpInnerHtml += "</div>";
+			
+			if(i%3 == 2 || i == jsonContent.length-1){
+				tmpInnerHtml += "</div>";
+			}
+		}
+		
+        $("#mainContentContainer").html(tmpInnerHtml);
+	}
 	</script>
 </body>
 

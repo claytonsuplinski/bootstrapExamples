@@ -13,5 +13,21 @@
 {"name" : "US Map", "link" : "./angular_D3/usMap.html", "image" : "./angular_D3/usMap.png", "categories" : ["D3"], "description" : "An interactive map of the United States."},
 {"name" : "Dashboard", "link" : "./angular_D3/dashboard.html", "image" : "./angular_D3/dashboard.png", "categories" : ["D3"], "description" : "An interactive bar graph, pie graph, and numerical output display for analysis."},
 {"name" : "Table of Links", "link" : "./angular_D3/index.html", "image" : "./angular_D3/index.png", "categories" : ["Angular"], "description" : "A list of links formatted and generated from json data."},
-{"name" : "Homepage 1", "link" : "./homepage1/index.html", "image" : "./homepage1/image.png", "categories" : ["Bootstrap"], "description" : "A simple homepage template, also suited for mobile devices."}
+{"name" : "Homepage 1", "link" : "./homepage1/index.html", "image" : "./homepage1/image.png", "categories" : ["Bootstrap"], "description" : "A simple homepage template, also suited for mobile devices."},
+{"name" : "Homepage 2", "link" : "./homepage2/index.html", "image" : "./homepage2/image.png", "categories" : ["Bootstrap"], "description" : "A homepage template, also suited for mobile devices."},
+{"name" : "Homepage 3", "link" : "./homepage3/index.html", "image" : "./homepage3/image.png", "categories" : ["Bootstrap"], "description" : "A homepage template, also suited for mobile devices."},
+{"name" : "Homepage 4", "link" : "./homepage4/index.html", "image" : "./homepage4/image.png", "categories" : ["Bootstrap"], "description" : "A simple homepage template, also suited for mobile devices."},
+{"name" : "Homepage 5", "link" : "./homepage5/index.html", "image" : "./homepage5/image.png", "categories" : ["Bootstrap"], "description" : "A modern homepage template, also suited for mobile devices."},
+{"name" : "Blog Homepage", "link" : "./blogHomepage/index.html", "image" : "./blogHomepage/image.png", "categories" : ["Bootstrap"], "description" : "A simple blog homepage template, also suited for mobile devices."},
+{"name" : "Blog Post", "link" : "./blogPost/index.html", "image" : "./blogPost/image.png", "categories" : ["Bootstrap"], "description" : "A simple template for a blog post."},
+{"name" : "Shopping Homepage", "link" : "./shoppingHomepage/index.html", "image" : "./shoppingHomepage/image.png", "categories" : ["Bootstrap"], "description" : "A template for a homepage of a shopping website."},
+{"name" : "Shopping Item", "link" : "./shoppingItem/index.html", "image" : "./shoppingItem/image.png", "categories" : ["Bootstrap"], "description" : "A template for an individual item on a shopping website."},
+{"name" : "Portfolio Grid", "link" : "./portfolio3Col/index.html", "image" : "./portfolio3Col/image.png", "categories" : ["Bootstrap"], "description" : "A template for a portfolio of images and links in a grid pattern."},
+{"name" : "Portfolio Homepage", "link" : "./portfolioHomepage/index.html", "image" : "./portfolioHomepage/image.png", "categories" : ["Bootstrap"], "description" : "A homepage template for a portfolio, also suited for mobile devices."},
+{"name" : "Portfolio Item", "link" : "./portfolioItem/index.html", "image" : "./portfolioItem/image.png", "categories" : ["Bootstrap"], "description" : "A homepage template for an individual item in a portfolio, also suited for mobile devices."},
+{"name" : "Dashboard - Bootstrap Admin", "link" : "./dashboard/index.html", "image" : "./dashboard/image.png", "categories" : ["Bootstrap"], "description" : "A template for a dashboard with various graphs. Also includes menus, log-in forms, and various other templates and displays."},
+{"name" : "Scrolling Toolbar", "link" : "./scrollingToolbar/index.html", "image" : "./scrollingToolbar/image.png", "categories" : ["Bootstrap"], "description" : "A template for a scrolling toolbar on a given webpage."},
+{"name" : "Sidebar Menu", "link" : "./sidebar/index.html", "image" : "./sidebar/image.png", "categories" : ["Bootstrap"], "description" : "A template for a menu along the side of a given webpage."},
+{"name" : "Image Slider", "link" : "./imageSlider/index.html", "image" : "./imageSlider/image.png", "categories" : ["Bootstrap"], "description" : "A template for a simple image slider."},
+{"name" : "Thumbnail Gallery", "link" : "./thumbnails/index.html", "image" : "./thumbnails/image.png", "categories" : ["Bootstrap"], "description" : "A thumbnail gallery of images."}
 ]
